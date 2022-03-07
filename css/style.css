@@ -1,0 +1,82 @@
+#menu {
+  color: yellowgreen;
+  font-size: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+#menu .thanh-ngang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#menu .thanh-ngang .nav-item {
+  padding-right: 16px;
+  cursor: pointer;
+}
+
+#menu .thanh-ngang a {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  padding: 8px 0;
+  color: #93c;
+  text-decoration: none;
+}
+
+#menu .thanh-ngang a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+#menu .thanh-ngang a:hover:before {
+  background: #fff;
+  width: 100%;
+  -webkit-transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+#menu .thanh-ngang a:hover:after {
+  background: transparent;
+  width: 100%;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+#menu .thanh-ngang a:before {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  background: #fff;
+  left: 0;
+}
+
+#menu .thanh-ngang a:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  background: #fff;
+  right: 0;
+  background: #000;
+  -webkit-transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+html {
+  width: cover;
+  font-family: 'Eater', cursive;
+  background: #665fd4;
+  background: -webkit-gradient(linear, left top, right top, color-stop(4%, #665fd4), color-stop(42%, #1ddae4), color-stop(100%, #1aaa10), to(#00d4ff));
+  background: linear-gradient(90deg, #665fd4 4%, #1ddae4 42%, #1aaa10 100%, #00d4ff 100%);
+}
+/*# sourceMappingURL=style.css.map */
