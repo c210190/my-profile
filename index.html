@@ -68,11 +68,11 @@
             <div class="row">
                 <div class="text-center tt">
                     <h1>about me</h1>
-                            <div class="css-ln">
-                                <div class="ln"></div>
-                                <div class="cn">who i am</div>
-                                <div class="ln"></div>
-                            </div>
+                    <div class="css-ln">
+                        <div class="ln"></div>
+                        <div class="cn">who i am</div>
+                        <div class="ln"></div>
+                    </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 css-img ">
                     <img width="100%" src="./anh1/33ra1.png" alt="">
@@ -101,11 +101,11 @@
             <div class="row">
                 <div class="col-lg-12 text-center tt">
                     <h1>skills</h1>
-                            <div class="css-ln">
-                                <div class="ln"></div>
-                                <div class="cn">what i know</div>
-                                <div class="ln"></div>
-                            </div>
+                    <div class="css-ln">
+                        <div class="ln"></div>
+                        <div class="cn">what i know</div>
+                        <div class="ln"></div>
+                    </div>
                 </div>
                 <div class="skilldau"><img src="./anh1/gau.gif" width="10%" alt="">
                     <div class="skills">スキル</div><img src="./anh1/gau.gif" alt="">
@@ -204,11 +204,11 @@
                 <div class="col-lg-12">
                     <div class="text-center tt">
                         <h1>works</h1>
-                                <div class="css-ln">
-                                    <div class="ln"></div>
-                                    <div class="cn">what i've done</div>
-                                    <div class="ln"></div>
-                                </div>
+                        <div class="css-ln">
+                            <div class="ln"></div>
+                            <div class="cn">what i've done</div>
+                            <div class="ln"></div>
+                        </div>
                     </div>
 
 
@@ -287,16 +287,16 @@
                 <div class="cog-lg-12">
                     <div class="text-center tt">
                         <h1>contract</h1>
-                                <div class="css-ln">
-                                    <div class="ln"></div>
-                                    <div class="cn">get in touch</div>
-                                    <div class="ln"></div>
-                                </div>
+                        <div class="css-ln">
+                            <div class="ln"></div>
+                            <div class="cn">get in touch</div>
+                            <div class="ln"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-log-6 col-md-6 col-sm-12 col-12 left">
                     <h2>contract info</h2>
-      
+
                     <div class="khung">
                         <dl>
                             <dt><i class="fa-solid fa-user icon"></i></dt>
@@ -325,30 +325,27 @@
 
                 <div class="col-log-6 col-md-6 col-sm-12 col-12 right">
                     <h2>message me</h2>
-                    <form
-                    action="https://formspree.io/f/xwkyqbng"
-                    method="POST"
-                  >
-                    <dl>
-                        <dt>
-                            <p class="td">名前</p>
-                            <input type="text" class="khung">
-                        </dt>
-                        <dd>
-                            <p class="td">メール</p>
-                            <input type="text" class="khung" placeholder="example@gmail.com">
-                        </dd>
-                    </dl>
+                    <form action="https://formspree.io/f/xwkyqbng" method="POST">
+                        <dl>
+                            <dt>
+                                <p class="td">名前</p>
+                                <input type="text" class="khung">
+                            </dt>
+                            <dd>
+                                <p class="td">メール</p>
+                                <input type="text" class="khung" placeholder="example@gmail.com">
+                            </dd>
+                        </dl>
 
-                    <div>
-                        <p class="td">件名</p>
-                        <input type="text" class="khung">
-                    </div>
-                    <div class="nd">
-                        <p class="td">お問い合わせ内容</p>
-                        <textarea type="text" placeholder="内容" ></textarea>
-                    </div>
-                    <button type="submit" class="nut">送信</button>
+                        <div>
+                            <p class="td">件名</p>
+                            <input type="text" class="khung">
+                        </div>
+                        <div class="nd">
+                            <p class="td">お問い合わせ内容</p>
+                            <textarea type="text" placeholder="内容"></textarea>
+                        </div>
+                        <button type="submit" class="nut">送信</button>
                     </form>
                 </div>
 
@@ -356,10 +353,11 @@
         </div>
     </section>
     <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
-<div class="hc">   <img src="./anh1/vv.gif" alt=""></div>
-<footer>
-    
-    <i class="fa-brands fa-angellist"></i>nghia</footer>
+    <div class="hc"> <img src="./anh1/vv.gif" alt=""></div>
+    <footer>
+
+        <i class="fa-brands fa-angellist"></i>nghia
+    </footer>
     <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -381,19 +379,19 @@
                 x.style.display = "none";
             }
         }
-        
+
         $(document).ready(function () {
-            $(window).scroll(function() {
-        if (this.scrollY > 400) {
-            $('.scroll-up-btn').addClass("show");
-        } else {
-            $('.scroll-up-btn').removeClass("show");
-        }
-    });
-    $('.scroll-up-btn').click(function() {
-        $('html').animate({ scrollTop: 0 });
-        $('html').css("scrollBehavior", "auto");
-    });
+            $(window).scroll(function () {
+                if (this.scrollY > 400) {
+                    $('.scroll-up-btn').addClass("show");
+                } else {
+                    $('.scroll-up-btn').removeClass("show");
+                }
+            });
+            $('.scroll-up-btn').click(function () {
+                $('html').animate({ scrollTop: 0 });
+                $('html').css("scrollBehavior", "auto");
+            });
             var typed = new Typed(".typing", {
                 strings: ["ウェブサイト開発者", "フロントエンド エンジニア"],
                 typeSpeed: 200,
@@ -401,7 +399,7 @@
                 loop: true
             });
         });
-      
+
     </script>
 
 </body>
