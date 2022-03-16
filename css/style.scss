@@ -1,62 +1,482 @@
+body{
+    height: 100vh;
+    font-family: 'Eater', cursive;
+    background: linear-gradient(90deg, rgb(96, 241, 229) 4%, rgb(148, 219, 223) 42%, rgb(175, 238, 233) 100%, rgba(0,212,255,1) 100%);
+    
+}
+.scroll-up-btn {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background-color: #F8EDED;
+    border: 3px solid #E4BAD4;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 40px;
+    color: #333;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    &:hover {
+        background-color: #558776;
+    }
+}
+.show{
+    bottom: 30px;
+    pointer-events: auto;
+    opacity: 1;
+}
 #menu{
-    color: yellowgreen;
+    width: 100%;
+    position: fixed;
     font-size: 25px;
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    padding-top: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Eater', cursive;
+    z-index: 9;
+    background: linear-gradient(90deg, rgb(96, 241, 229) 4%, rgb(148, 219, 223) 42%, rgb(175, 238, 233) 100%, rgba(0,212,255,1) 100%);
+    .name{
+        margin-left: 20px;
+        margin-top: 9px;
+    }
  .thanh-ngang{
      display: flex;
       .nav-item{
           padding-right: 16px;
-          cursor: pointer;
+        cursor: pointer;
       }
-      a {
-        position: relative;
+    //   a {
+    //     position: relative;
+    //     display: block;
+    //     cursor: pointer;
+    //     padding: 8px 0;
+    //     color: #93c;
+    //     text-decoration: none;
+    //     &:hover {
+    //         color: #000;
+    //         text-decoration: none;
+    //         &:before {
+    //             background: #fff;
+    //             width: 100%;
+    //             transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    //         }
+    //         &:after {
+    //             background: transparent;
+    //             width: 100%;
+    //             transition: 0s;
+    //         }
+    //     }
+    //     &:before {
+    //         content: '';
+    //         position: absolute;
+    //         width: 0%;
+    //         height: 2px;
+    //         bottom: -2px;
+    //         background: #fff;
+    //         left: 0;
+    //     }
+    //     &:after {
+    //         content: '';
+    //         position: absolute;
+    //         width: 0%;
+    //         height: 2px;
+    //         bottom: -2px;
+    //         background: #fff;
+    //         right: 0;
+    //         background: #000;
+    //         transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+    //     }
+    // }
+    a{position: relative;
         display: block;
         cursor: pointer;
         padding: 8px 0;
-        color: #93c;
+        color: black;
         text-decoration: none;
-        &:hover {
-            color: #000;
-            text-decoration: none;
-            &:before {
-                background: #fff;
-                width: 100%;
-                transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-            }
-            &:after {
-                background: transparent;
-                width: 100%;
-                transition: 0s;
-            }
-        }
-        &:before {
-            content: '';
+          &::before{
+            content: "";
+            opacity: 0;
             position: absolute;
-            width: 0%;
-            height: 2px;
-            bottom: -2px;
-            background: #fff;
+            width: 35px;
+            height: 35px;
+            border-radius: 100%;
+            background: rgb(214, 124, 124);
+            z-index: -1;
+            margin: auto;
             left: 0;
-        }
-        &:after {
-            content: '';
-            position: absolute;
-            width: 0%;
-            height: 2px;
-            bottom: -2px;
-            background: #fff;
             right: 0;
-            background: #000;
-            transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+            transition: 1s;
+        }
+         &:hover{
+         &::before{
+            opacity: 1;
+         }
+         }
+    }
+ }
+ .menu-mobile{
+    position: relative;
+    display: none;
+    a{
+        text-decoration: none;
+        margin-right:10px;
+        margin-top: 9px;
+    }
+   
+    .mobile-thanh-ngang{
+        position: absolute;
+        top: 46px;
+        right: 10px;
+        background: linear-gradient(90deg, rgb(148, 219, 223) 42%, rgb(175, 238, 233) 100%, rgba(0,212,255,1) 100%);
+        width: 200px;
+        text-align: center;
+    
+        
+    }
+ }
+}
+
+#top{
+    padding-top: 100px;
+    .tr{
+        margin:auto;
+        text-align: center;
+        font-size: 30px;
+    .typing{
+        margin:auto;
+        text-align: center;
+        font-size: 30px;
+    }
+}
+    .css-img{
+        img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 150px;
+        
+        }
+    }
+}
+#about{
+    padding-top: 100px;
+    .tt{
+        
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Eater', cursive;}
+    .css-ln{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       .cn{
+           font-size: 24px;
+       }
+        .ln{
+              display: flex;
+              height: 2px;
+              width: 15px;
+             background-color: rgb(189, 26, 15);
+             margin-top: 9px;
+     }
+ }
+ .css-img{
+     margin-top: 50px;
+     img{
+         border-radius: 25px;
+         object-fit: cover;
+         object-position: center;
+     }
+ }
+ .right{
+     margin-top: 50px;
+     dl{
+         display: flex;
+         flex-wrap: wrap;
+         dt{
+             width: 15%;
+         }
+         dd{
+             width: 85%;
+         }
+     }
+ }
+}
+#skills{
+    padding-top: 100px;
+   .tt{
+       
+   font-family: 'Dancing Script', cursive;
+   font-family: 'Eater', cursive;}
+   .css-ln{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+      .cn{
+          font-size: 24px;
+      }
+       .ln{
+             display: flex;
+             height: 2px;
+             width: 15px;
+            background-color: rgb(189, 26, 15);
+            margin-top: 9px;
+    }
+}
+.skilldau{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    .skills{
+        font-size: 20px;
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Eater', cursive;
+    }
+    img{
+        width: 30px;
+        display: flex;
+    }
+}
+
+.skill{
+    display: flex;
+    justify-content: space-between;
+    .tennganh{
+        display: flex;
+        width: 40%;
+        margin-top: 15px;
+        img{
+            width: 30px;
+            margin-right: 20px;
+        }
+    }
+    .mucdo{
+        width: 60%;
+        .so{
+            display: flex;
+            justify-content: end;
+        }
+        .thanh{
+            height: 15px;
+            width: 100%;
+            position: relative;
+            background:rgb(189, 26, 15);
+            border-radius: 15px;
+            &::before{
+                content: "";
+                position: absolute;
+                height: 100%;
+                left: 0;
+                top: 0;
+                background: yellowgreen;
+                border-radius: 15px;
+            }
+
+        }
+        .html{
+            &::before{
+                width: 60%;
+            }
+        }
+    }
+}
+}
+#works{
+     padding-top: 100px;
+       .tt{
+           
+       font-family: 'Dancing Script', cursive;
+       font-family: 'Eater', cursive;}
+       .css-ln{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+          .cn{
+              font-size: 24px;
+          }
+           .ln{
+                 display: flex;
+                 height: 2px;
+                 width: 15px;
+                background-color: rgb(189, 26, 15);
+                margin-top: 9px;
+        }
+   }
+   .item{
+       position: relative;
+       overflow: hidden;
+       img{
+           width: 100%;
+           object-fit: cover;
+           object-position: center;
+           overflow: hidden;
+           height: 350px;
+        }
+       .gt{
+           position: absolute;
+           height: 0;
+           bottom: 0;
+           left: 0;
+           right: 0;
+           background-color: bisque;
+       }
+       p{
+           text-align: center;
+       }
+       &:hover{
+            img{
+                transform: scale(1.3);
+                object-fit: cover;
+                object-position: center;
+             } 
+            .gt{
+                height: 20%;
+            }
+    }
+   }
+}
+#contract{
+    padding-top: 100px;
+       .tt{
+           
+       font-family: 'Dancing Script', cursive;
+       font-family: 'Eater', cursive;}
+       .css-ln{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+          .cn{
+              font-size: 24px;
+          }
+           .ln{
+                 display: flex;
+                 height: 2px;
+                 width: 15px;
+                background-color: rgb(189, 26, 15);
+                margin-top: 9px;
+        }
+    }
+    .left{
+        margin-top: 30px;
+        .td{
+            font-size: 20px;
+            font-weight: 100;
+        }
+        .icon{
+            font-size: 40px;
+            padding-left: 28px;
+            padding-top: 15px;
+        
+        }
+        .khung{
+            margin-top: 20px;
+        dl{
+            display: flex;
+            flex-wrap: wrap;
+            dt{
+                width: 25%;
+                
+            }
+            dd{
+                width: 75%;
+            }
+        }
+        }
+    }
+    .right{
+        margin-top: 30px;
+        .td{
+            font-size: 20px;
+            font-weight: 100;
+        }
+        .khung{
+            width: 100%;
+            border-radius: 10px;
+            display: block;
+            height: 40px;
+        }
+        dl{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            justify-content: space-between;
+            dt{
+            width: 48%;
+          }
+          dd{
+            width: 48%;
+          }
+        }
+       .nd{
+           margin-top: 20px;
+           textarea{
+               border-radius: 10px;
+               height: 80px;
+               width: 100%;
+               border: 1.7px solid #0a0a08;
+               
+           }
+       }
+    }
+    h2{
+        font-family: 'Dancing Script', cursive;
+    font-family: 'Eater', cursive;
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    }
+    .nut{
+        border: 2px solid #0a0a08;
+    background-color: #F8EDED;
+    padding: 5px 35px;
+    border-radius: 15px;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    }
+}
+.hc{
+    display: flex;
+    justify-content: end;
+   
+}
+footer{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+@media only screen and (max-width: 62rem) {}
+@media only screen and (max-width: 48rem) {
+
+
+
+
+}
+@media only screen and (max-width: 36rem) {
+#menu{
+    .thanh-ngang{
+        display: none;
+    }
+    .menu-mobile{
+        display: block;
+        .mobile-thanh-ngang{
+            display: none;
         }
     }
  }
 }
-html{
-    width: cover;
-    font-family: 'Eater', cursive;
-    background: rgb(102,95,212);
-    background: linear-gradient(90deg, rgba(102,95,212,1) 4%, rgba(29,218,228,1) 42%, rgba(26,170,16,1) 100%, rgba(0,212,255,1) 100%);
-}
+@media only screen and (max-width: 30rem) and (min-width: 20rem) {}
+

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,28 +8,396 @@
     <title>HIRI portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
- 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Eater&display=swap" rel="stylesheet">
-</head>
-<body>
-   <div id="menu" >
-       <div class="name">
-           <div>nguyen nghia</div>
-       </div>
-       <div class="thanh-ngang">
-        <div class="nav-item"><a href="#top">top</a></div>
-        <div class="nav-item"><a href="#about">about</a></div>
-        <div class="nav-item"><a href="#skills">skills</a></div>
-        <div class="nav-item"><a href="#works">works</a></div>
-        <div class="nav-item"><a href="#contract">contract</a></div>
-       </div>
- </div>
-   <section id="top">
-    
-   </section>
-   <section id="about">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"
+        integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Eater&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-</section>
+
+</head>
+
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <div id="menu">
+        <div class="name">
+            <div>nguyen nghia</div>
+        </div>
+        <div class="thanh-ngang">
+            <div class="nav-item"><a href="#top">top</a></div>
+            <div class="nav-item"><a href="#about">about</a></div>
+            <div class="nav-item"><a href="#skills">skills</a></div>
+            <div class="nav-item"><a href="#works">works</a></div>
+            <div class="nav-item"><a href="#contract">contract</a></div>
+        </div>
+
+        <div class="menu-mobile">
+            <a onclick="hideshow()"><i class="fa-solid fa-bars"></i></a>
+            <div id="nav-menu" class="mobile-thanh-ngang" style="display:none;">
+                <div class="nav-item"><a href="#top">top</a></div>
+                <div class="nav-item"><a href="#about">about</a></div>
+                <div class="nav-item"><a href="#skills">skills</a></div>
+                <div class="nav-item"><a href="#works">works</a></div>
+                <div class="nav-item"><a href="#contract">contract</a></div>
+            </div>
+        </div>
+    </div>
+    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+    <section id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-12 tr">
+                    <p>HELLO</p>
+                    <p>ギアと申します</p>
+                    <div><span class="typing"></span>です。</div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 css-img">
+                    <img src="./anh1/33ra1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="text-center tt">
+                    <h1>about me</h1>
+                            <div class="css-ln">
+                                <div class="ln"></div>
+                                <div class="cn">who i am</div>
+                                <div class="ln"></div>
+                            </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 css-img ">
+                    <img width="100%" src="./anh1/33ra1.png" alt="">
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-12 right">
+                    <dl>
+                        <dt>名前 :</dt>
+                        <dd>グエン　ギア</dd>
+                        <dt>学校 :</dt>
+                        <dd>中央情報専門学校</dd>
+                        <dt>興味 :</dt>
+                        <dd>食べること</dd>
+                        <dt>経緯 :</dt>
+                        <dd>まだ考えない</dd>
+
+                    </dl>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+    <section id="skills">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center tt">
+                    <h1>skills</h1>
+                            <div class="css-ln">
+                                <div class="ln"></div>
+                                <div class="cn">what i know</div>
+                                <div class="ln"></div>
+                            </div>
+                </div>
+                <div class="skilldau"><img src="./anh1/gau.gif" width="10%" alt="">
+                    <div class="skills">スキル</div><img src="./anh1/gau.gif" alt="">
+                </div>
+                <div class="skill">
+                    <div class="tennganh">
+                        <img src="./anh1/html-icon.png" alt="">HTML
+                    </div>
+                    <div class="mucdo">
+                        <span class="so">??%</span>
+                        <div class="thanh html"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="tennganh">
+                        <img src="./anh1/scss-icon.png" alt="">SCSS
+                    </div>
+                    <div class="mucdo">
+                        <span class="so">??%</span>
+                        <div class="thanh html"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="tennganh">
+                        <img src="./anh1/js-icon.png" alt="">Javascript
+                    </div>
+                    <div class="mucdo">
+                        <span class="so">??%</span>
+                        <div class="thanh html"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="tennganh">
+                        <img src="./anh1/php-icon.png" alt="">PHP
+                    </div>
+                    <div class="mucdo">
+                        <span class="so">??%</span>
+                        <div class="thanh html"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="tennganh">
+                        <img src="./anh1/java-icon.png" alt="">Java
+                    </div>
+                    <div class="mucdo">
+                        <span class="so">??%</span>
+                        <div class="thanh html"></div>
+                    </div>
+                </div>
+                <div class="skilldau"><img src="./anh1/gau.gif" width="10%" alt="">
+                    <div class="skills">ツール</div><img src="./anh1/gau.gif" alt="">
+                </div>
+                <div class="skill">
+                    <div class="tennganh">
+                        <img src="./anh1/photoshop-icon.png" alt="">photoshop
+                    </div>
+                    <div class="mucdo">
+                        <span class="so">??%</span>
+                        <div class="thanh html"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="tennganh">
+                        <img src="./anh1/xd-icon.png" alt="">adobe Xd
+                    </div>
+                    <div class="mucdo">
+                        <span class="so">??%</span>
+                        <div class="thanh html"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="tennganh">
+                        <img src="./anh1/vscode-icon.png" alt="">vsCode
+                    </div>
+                    <div class="mucdo">
+                        <span class="so">??%</span>
+                        <div class="thanh html"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="tennganh">
+                        <img src="./anh1/git-Icon.png" alt="">Git
+                    </div>
+                    <div class="mucdo">
+                        <span class="so">??%</span>
+                        <div class="thanh html"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+    <section id="works">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center tt">
+                        <h1>works</h1>
+                                <div class="css-ln">
+                                    <div class="ln"></div>
+                                    <div class="cn">what i've done</div>
+                                    <div class="ln"></div>
+                                </div>
+                    </div>
+
+
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12 mt-4 ">
+                    <div class="row">
+                        <div class="col-lg-12 mt-4">
+                            <div class="item">
+                                <img src="./anh/vhl2.jpg" width="100%" alt="">
+                                <div class="gt">
+                                    <p>vhl</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="cols-lg-6 col-md-6 col-sm-12 col-12 mt-4 hinh1">
+                            <div class="item">
+                                <img src="./anh/hd.jpg" height="350px" width="100%" alt="">
+                                <div class="gt">
+                                    <p>hd</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-4 hinh2">
+                            <div class="item">
+                                <img src="./anh/hh.jpg" height="350px" width="100%" alt="">
+                                <div class="gt">
+                                    <p>hh</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12 mt-4 ">
+                    <div class="row">
+                        <div class="cols-lg-6 col-md-6 col-sm-12 col-12 mt-4 hinh1">
+                            <div class="item">
+                                <img src="./anh/hd.jpg" height="350px" width="100%" alt="">
+                                <div class="gt">
+                                    <p>hd</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-4 hinh2">
+                            <div class="item">
+                                <img src="./anh/hh.jpg" height="350px" width="100%" alt="">
+                                <div class="gt">
+                                    <p>hh</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 mt-4">
+                            <div class="item">
+                                <img src="./anh/vhl2.jpg" width="100%" alt="">
+                                <div class="gt">
+                                    <p>vhl</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </section>
+    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+    <section id="contract">
+        <div class="container">
+            <div class="row">
+                <div class="cog-lg-12">
+                    <div class="text-center tt">
+                        <h1>contract</h1>
+                                <div class="css-ln">
+                                    <div class="ln"></div>
+                                    <div class="cn">get in touch</div>
+                                    <div class="ln"></div>
+                                </div>
+                    </div>
+                </div>
+                <div class="col-log-6 col-md-6 col-sm-12 col-12 left">
+                    <h2>contract info</h2>
+                    <div class="khung">
+                        <dl>
+                            <dt><i class="fa-solid fa-user icon"></i></dt>
+                            <dd>
+                                <p class="td">名前</p>
+                                <p>グエン　ギア</p>
+                            </dd>
+                            <dt><i class="fa-solid fa-map-location-dot icon"></i></dt>
+                            <dd>
+                                <p class="td">住所</p>
+                                <p>さいたま市</p>
+                            </dd>
+                            <dt><i class="fa-solid fa-envelope icon"></i></dt>
+                            <dd>
+                                <p class="td">メール</p>
+                                <p>c210190@ccmc-info.ac.jp</p>
+                            </dd>
+                            <dt><i class="fa-brands fa-github icon"></i></dt>
+                            <dd>
+                                <p class="td">github</p>
+                                <p>https://github.com/c210190</p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="col-log-6 col-md-6 col-sm-12 col-12 right">
+                    <h2>message me</h2>
+                    <dl>
+                        <dt>
+                            <p class="td">名前</p>
+                            <input type="text" class="khung">
+                        </dt>
+                        <dd>
+                            <p class="td">メール</p>
+                            <input type="text" class="khung" placeholder="example@gmail.com">
+                        </dd>
+                    </dl>
+
+                    <div>
+                        <p class="td">件名</p>
+                        <input type="text" class="khung">
+                    </div>
+                    <div class="nd">
+                        <p class="td">お問い合わせ内容</p>
+                        <textarea type="text" placeholder="内容" ></textarea>
+                    </div>
+                    <button type="submit" class="nut">送信</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+<div class="hc">   <img src="./anh1/vv.gif" alt=""></div>
+<footer>
+    
+    <i class="fa-brands fa-angellist"></i>nghia</footer>
+    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
+        integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+        function hideshow() {
+            var x = document.getElementById("nav-menu");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        
+        $(document).ready(function () {
+            $(window).scroll(function() {
+        if (this.scrollY > 400) {
+            $('.scroll-up-btn').addClass("show");
+        } else {
+            $('.scroll-up-btn').removeClass("show");
+        }
+    });
+    $('.scroll-up-btn').click(function() {
+        $('html').animate({ scrollTop: 0 });
+        $('html').css("scrollBehavior", "auto");
+    });
+            var typed = new Typed(".typing", {
+                strings: ["ウェブサイト開発者", "フロントエンド エンジニア"],
+                typeSpeed: 200,
+                backSpeed: 120,
+                loop: true
+            });
+        });
+      
+    </script>
+
 </body>
+
 </html>
